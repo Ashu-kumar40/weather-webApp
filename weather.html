@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Web-App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <iconify-icon icon="eva:arrow-back-outline" style="color: #00ccf0;" class="back" width="23px"></iconify-icon>
+            <h1>Weather App</h1>
+            <iconify-icon icon="fluent:weather-hail-day-24-regular" style="color: #00ccf0;" width="30" height="30"></iconify-icon>
+        </header>
+        <section class="input-sec">
+            <div class="content">
+                <p class="msg"> this is instruction</p>
+                <input type="text" id="input-location" placeholder="Enter city name" spellcheck="false" required>
+                <div class="saparator"></div>
+                <button class="search">Get the device location</button>
+            </div>
+        </section>
+        <section class="weather-page">
+            <img src="#" alt="weather">
+
+            <div class="temp">
+                <div>
+                    <span class="num">12</span>
+                <span class="deg">°C</span>
+                </div>
+                <div class="weatherCondition">Clean</div>
+            </div>
+            <div class="location-info">
+                <img src="./assets/weather-info/location.gif" alt="loc" width="24px">
+                <span class="location">Delhi, India</span>
+            </div>
+
+            <div class="more-info">
+                <div class="feelsLike">
+                    <iconify-icon icon="fluent:temperature-24-regular" style="color: #00ccf0;" width="40px"></iconify-icon>
+                    <div class="details">
+                        <span class="num">12</span>
+                        <span class="unit">°C</span>
+                        <p>Feels like</p>
+                    </div>
+                </div>
+                <div class="humidity">
+                    <iconify-icon icon="carbon:humidity" style="color: #00ccf0;" width="40px"></iconify-icon>
+                    <div class="details">
+                        <span class="num">55</span>
+                        <span class="unit">%</span> 
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+        <script src="./weather.js"></script>
+    </div>
+</body>
+</html>
