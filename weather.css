@@ -41,7 +41,7 @@ header h1{
 }
 
 header .back{
-    /* display: none; */
+    display: none;
     margin-right: 10px;
     cursor: pointer;
 }
