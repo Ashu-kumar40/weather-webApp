@@ -23,12 +23,6 @@ searchBtn.addEventListener('click', e=>{
     }
 })
 
-// searchBtn.addEventListener('click', e=>{
-//     if(inputArea.value != ""){
-//         requestApi(inputArea.value);
-//     }
-// });
-
 
 locationBtn.addEventListener("click", e =>{
     if(navigator.geolocation){// if browser support geolocation api
