@@ -3,7 +3,8 @@ inputSec = container.querySelector('.input-sec'),
 content = inputSec.querySelector('.content'),
 msg = content.querySelector('.msg'),
 inputArea = content.querySelector('#input-location');
-locationBtn = content.querySelector('.search')
+locationBtn = content.querySelector('.searchLoc')
+const searchBtn = content.querySelector('.searchbtn');
 const apiKey = "404a51a925bd942277ef7a70302bfb24";
 let api;
 const weatherIcon = container.querySelector('.weather-page img')
@@ -11,10 +12,16 @@ const backBtn = container.querySelector('header .back');
 
 inputArea.addEventListener('keyup', e=>{
     // if user pressed enter and input value is not empty
-    if(e.key == 'Enter' && inputArea.value != ""){
+    if(e.key == 'Enter'&& inputArea.value != ""){
         requestApi(inputArea.value);
     }
 });
+
+searchBtn.addEventListener('click', e=>{
+    if(inputArea.value != ""){
+        requestApi(inputArea.value);
+    }
+})
 
 
 locationBtn.addEventListener("click", e =>{
@@ -98,5 +105,5 @@ function weatherInfo(info){
 }
 
 backBtn.addEventListener("click",()=>{
-    container.classList.remove("active")
+    container.classList.remove("active");
 });
