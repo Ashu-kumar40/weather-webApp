@@ -231,14 +231,14 @@ header .back{
         margin: 0px;
     }
     .weather-page>img{
-        width: 250px;
+        width: 150px;
     }
     .more-info{
-        position: absolute;
+        position: fixed;
         bottom: 0px;
     }
     .feelsLike, .humidity{
-        padding: 10px 0px;
+        padding: 20px 0px;
     }
     
 }
